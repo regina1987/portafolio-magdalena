@@ -26,5 +26,12 @@ background-position: center;
 height: 38rem;
 background-repeat: no-repeat;
 
+}
 
+
+@media (max-width:750px)
+{
+  .lgg {
+    display: none;
+  }
 }
