@@ -33,7 +33,14 @@ background-repeat: no-repeat;
 
 @media (max-width:750px)
 {
-  .lgg {
+  .lgg  {
+    display: none;
+  }
+}
+
+@media (max-width:750px)
+{
+  .pp  {
     display: none;
   }
 }
