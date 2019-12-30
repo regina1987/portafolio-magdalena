@@ -11,9 +11,9 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 
-    <title></title>
+    <title>MAGDALENA</title>
   </head>
-  <body>
+  <body  >
 <!--navbar-->
 <nav class=" fixed-top navbar violeta navbar-expand-lg  navbar-dark py-0">
    <span class="navbar ml-5 text-light rr font-weight-bold py-0 h3 ">M</span>
@@ -25,16 +25,16 @@
 
      <ul class="navbar-nav text-right">
        <li class="nav-item active ">
-         <a class="nav-link " href="#sobre">Sobre me <span class="sr-only">(current)</span></a>
+         <a class="nav-link " data-toggle="tooltip" data-placement="bottom" title="Click me"  href="#sobre">Sobre me <span class="sr-only">(current)</span></a>
        </li>
        <li class="nav-item  active">
-         <a class="nav-link " href="#ex">Experiencia<span class="sr-only">(current)</span></a>
+         <a class="nav-link " data-toggle="tooltip" data-placement="bottom" title="Donde trabajó" href="#ex">Experiencia<span class="sr-only">(current)</span></a>
        </li>
        <li class="nav-item  active">
-         <a class="nav-link  " href="#trabajo">Trabajos<span class="sr-only">(current)</span></a>
+         <a class="nav-link  " data-toggle="tooltip" data-placement="bottom" title="Ejemplos" href="#trabajo">Trabajos<span class="sr-only">(current)</span></a>
        </li>
        <li class="nav-item active text-right">
-         <a class="nav-link " href=#contacto tabindex="-1" aria-disabled="true">Contacto <span class="sr-only">(current)</span></a>
+         <a class="nav-link "data-toggle="tooltip" data-placement="bottom" title="Escribeme"  href=#contacto tabindex="-1" aria-disabled="true">Contacto <span class="sr-only">(current)</span></a>
        </li>
      </ul></div>
    </div>
@@ -72,7 +72,7 @@
 </div>
 
 <!--Experiencia-->
-<section class="my-2 pt-2 mx-5" id="ex">
+<section class="my-2 pt-5 mx-5" id="ex">
   <h2 class="rr text-center font-weight-bold ">MI EXPERIENCIA</h2>
   <hr class=" mx-auto  bg-dark mx-5"style="width: 100px;"  >
   <div class="container  text-center px-5">
@@ -91,8 +91,9 @@
     </div>
   </div>
 </section>
+
 <!--trabajos echos-->
-<section class="violeta px-5 py-5" id="trabajo">
+<section class="violeta px-5 py-5 mx-0" id="trabajo">
   <h2 class="rr text-center font-weight-bold text-white ">MIS ÚLTIMOS TRABAJOS</h2>
   <hr class=" mx-auto  bg-white mx-5"style="width: 100px;"  >
   <div class="card-deck my-3 pt-5 px-5">
@@ -101,7 +102,7 @@
       <div class="card-body">
         <h5 class="card-title rr font-weight-bold">Meet&Coffe</h5>
         <p class="card-text ">Felis tincidunt vel risus lacus </p>
-
+<a href="#" data-toggle="modal" data-target="#m1" class="btn btn-secondary">Ver mas</a>
       </div>
     </div>
     <div class="card">
@@ -109,7 +110,7 @@
       <div class="card-body">
         <h5 class="card-title rr font-weight-bold">Iguana Page</h5>
         <p class="card-text">Felis tincidunt vel risus lacus </p>
-
+<a href="#" data-toggle="modal" data-target="#m2" class="btn btn-secondary">Ver mas</a>
       </div>
     </div>
     <div class="card">
@@ -117,7 +118,7 @@
       <div class="card-body">
         <h5 class="card-title rr font-weight-bold">Suricata</h5>
         <p class="card-text">Felis tincidunt vel risus lacus </p>
-
+<a href="#" data-toggle="modal" data-target="#m3" class="btn btn-secondary">Ver mas</a>
       </div>
     </div>
   </div>
@@ -129,15 +130,15 @@
       <div class="card-body">
         <h5 class="card-title rr font-weight-bold">Cuppon</h5>
         <p class="card-text">Felis tincidunt vel risus lacus </p>
-
+<a href="#" data-toggle="modal" data-target="#m4" class="btn btn-secondary">Ver mas</a>
       </div>
     </div>
     <div class="card">
       <img src="./Assets/img/ricomida.png" class="card-img-top" alt="Ricomida">
       <div class="card-body">
-        <h5 class="card-title  rr font-weight-bold">Ricomida</h5>
+        <h5 class="card-title  rr ">Ricomida</h5>
         <p class="card-text">Felis tincidunt vel risus lacus</p>
-
+<a href="#" data-toggle="modal" data-target="#m5" class="btn btn-secondary">Ver mas</a>
       </div>
     </div>
     <div class="card">
@@ -145,7 +146,7 @@
       <div class="card-body">
         <h5 class="card-title rr font-weight-bold">DMark</h5>
         <p class="card-text">Felis tincidunt vel risus lacus </p>
-
+<a href="#" data-toggle="modal" data-target="#m6" class="btn btn-secondary">Ver mas</a>
       </div>
     </div>
   </div>
@@ -179,6 +180,108 @@
 </div>
 </footer>
 
+<!--modales-->
+
+<div class="modal"  id="m1" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title rr font-weight-bold">Meet&Coffe</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal"  id="m2" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title rr font-weight-bold">Iguana page</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+      </div>
+  </div>
+</div>
+</div>
+
+<div class="modal"  id="m3" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title rr font-weight-bold">Suricata</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal"  id="m4" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title rr font-weight-bold">Cuppon</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal"  id="m5" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title rr font-weight-bold">Ricomida</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal"  id="m6" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title rr font-weight-bold">D Mark</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Felis tincidunt vel risus lacus posuere dignissim habitasse sapien, scelerisque semper fusce turpis cubilia cursus a taciti, ligula in at sociis accumsan donec ridiculus.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
